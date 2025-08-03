@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diksha Giri | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary-start: #6366f1;
+      --primary-end: #a78bfa;
+    }
+    /* Section title underline accent */
+   
+    .section-title {
+  position: relative;
+  display: inline-block; /* sirf text ke niche underline aayega */
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%; /* heading ke text ke barabar */
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-start), var(--primary-end));
+  border-radius: 2px;
+}
+
+    /* Card lift on hover */
+    .card-enhance {
+      transition: transform .25s, box-shadow .25s;
+      box-shadow: 0 12px 30px rgba(99,102,241,0.08);
+    }
+    .card-enhance:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 45px rgba(99,102,241,0.18);
+    }
+    /* Link hover subtle tint */
+    a {
+      transition: color .2s;
+    }
+    a:hover {
+      color: #4f46e5;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-blue-700 to-blue-500 text-white shadow-md p-4 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold tracking-wide">Diksha Giri</h1>
+      <div class="space-x-6 text-sm md:text-base">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#skills" class="hover:underline">Skills</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#internships" class="hover:underline">Internships</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-blue-100 py-14 text-center">
+    <h2 class="text-4xl font-extrabold text-blue-800">Aspiring Data Analyst & Developer</h2>
+    <p class="mt-3 text-lg text-blue-600">Turning data and code into impactful solutions</p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-12 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-700 w-fit mb-6 section-title">About Me</h2>
+    <p class="text-gray-700 leading-relaxed">
+      I am a passionate and curious Computer Science Engineering graduate with practical experience in web development using Python and Django. Currently exploring and building skills in Data Analytics including Excel, SQL, Power BI, and Python for data cleaning and visualization. I enjoy learning new technologies and applying them to solve real-world problems.
+    </p>
+    <p class="mt-4 text-gray-600">
+      Interests: Community service initiatives, organizing events, exploring new cultures, yoga, and continuous learning.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-100 py-12 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-blue-700 w-fit mb-6 section-title">Skills</h2>
+      <ul class="grid grid-cols-2 md:grid-cols-3 gap-3 list-disc list-inside text-gray-700 text-lg">
+        <li>C</li>
+        <li>C++</li>
+        <li>JavaScript</li>
+        <li>HTML5 & CSS3</li>
+        <li>Python (Django)</li>
+        <li>SQL</li>
+        <li>VS Code, PyCharm, Android Studio</li>
+        <li>Excel, PowerPoint, Canva</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-12 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-700 w-fit mb-6 section-title">Projects</h2>
+
+    <div class="grid gap-6">
+      <div class="bg-white p-5 rounded-lg card-enhance">
+        <h3 class="text-xl font-semibold text-blue-800">College Website Development</h3>
+        <p class="mt-2 text-gray-700">
+          Designed and developed a responsive college website using Python (Django) for backend and HTML, CSS, Bootstrap, and JavaScript for frontend. Integrated SQLite and MySQL for data storage and ensured mobile compatibility with clean UI and structured MVC architecture.
+        </p>
+      </div>
+<div class="bg-white shadow-lg p-5 rounded-lg hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-blue-800">To Do List</h3>
+        <p class="mt-2 text-gray-700">
+          A simple command-line Python program that allows users to add, view, and delete daily tasks. Built using basic concepts like lists, loops, and conditional statements. The application runs entirely in the terminal and is designed to manage tasks during a session.
+        </p>
+      </div>
+
+      <div class="bg-white shadow-lg p-5 rounded-lg hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-blue-800">Simple Calculator</h3>
+        <p class="mt-2 text-gray-700">
+          A basic calculator created using Python that performs arithmetic operations like addition, subtraction, multiplication, and division. It runs in the terminal and takes input from the user to carry out the calculations step-by-step.
+        </p>
+      </div>
+
+      <div class="bg-white shadow-lg p-5 rounded-lg hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-blue-800">Automatic Password Generator</h3>
+        <p class="mt-2 text-gray-700">
+          A Python script that generates strong, random passwords based on user input for length. It uses Python’s built-in random and string modules to include a combination of letters, numbers, and symbols for secure password creation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internships -->
+  <section id="internships" class="bg-gray-100 py-12 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-blue-700 w-fit mb-6 section-title">Internships & Experience</h2>
+      <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+        <li>
+          <strong>Samsung Innovation Campus (Online) – Big Data</strong> | Aug 2024 – Oct 2024  
+          Completed training in Big Data concepts, applied data analysis techniques and tools.
+        </li>
+        <li>
+          <strong>Techpile Technology Pvt. Ltd. (Offline) – Python with Django</strong> | Aug 2021 – Oct 2021  
+          Worked on backend development using Django, building web features and managing database operations.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="py-12 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-700 w-fit mb-6 section-title">Certifications / Courses</h2>
+    <div class="grid gap-6">
+      <div class="bg-white p-5 rounded-lg card-enhance">
+        <p class="text-gray-700">
+          <strong>Deloitte Australia Data Analytics Job Simulation (Forage)</strong> – July 2025<br>
+          Completed a job simulation involving data analysis and forensic insights, created dashboards, and drew business conclusions using Excel.
+        </p>
+      </div>
+      <div class="bg-white p-5 rounded-lg card-enhance">
+        <p class="text-gray-700">
+          <strong>Self-learning Data Analyst Track – PW Skills</strong><br>
+          Ongoing independent learning covering Excel, SQL, Python for data analysis, Power BI, statistics, data cleaning, and visualization.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-12 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-700 w-fit mb-6 section-title">Education</h2>
+    <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+      <li><strong>B.Tech (CSE)</strong>, Institute of Technology & Management, Gorakhpur – 2022–2025 | CGPA: 7.75</li>
+      <li><strong>Diploma (CSE)</strong>, Maharana Pratap Polytechnic, Gorakhpur – 2020–2022 | 81.56%</li>
+      <li><strong>12th (Maths)</strong>, St. Mary’s Inter College, Gorakhpur – 2019–2020 | 66%</li>
+      <li><strong>10th</strong>, St. Mary’s Inter College, Gorakhpur – 2017–2018 | 80.5%</li>
+    </ul>
+  </section>
+
+  <!-- Extra Curricular & Interests -->
+  <section class="bg-gray-100 py-12 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-blue-700 w-fit mb-6 section-title">Extra-Curricular & Interests</h2>
+      <p class="text-gray-700 mb-2">
+        Successfully organized two events managing logistics, budgeting, and coordination. Actively involved in community service projects leveraging technology for societal impact.
+      </p>
+      <p class="text-gray-700">
+        Interests: Traveling and exploring cultures, yoga & exercising, listening to music for relaxation and inspiration.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-12 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold border-b-4 border-white w-fit mb-6 section-title">Contact</h2>
+      <p>Email: <a href="mailto:dikshagiri1401@gmail.com" class="underline">dikshagiri1401@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/diksha-giri-103958250/" class="underline">linkedin.com/in/diksha-giri-103958250</a></p>
+      <p>GitHub: <a href="https://github.com/Diksha666" class="underline">github.com/Diksha666</a></p>
+      <p>Location: Gorakhpur, Uttar Pradesh</p>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 text-sm text-gray-600 bg-gray-100">
+    © 2025 Diksha Giri | All rights reserved
+  </footer>
+
+</body>
+</html>
